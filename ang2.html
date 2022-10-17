@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app2">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+
+        <!-- You can create multiple views that use the same controller -->
+        <h4 ng-controller="ctrl1">First Random Number : {{randomNum1}}</h4>
+        <h4 ng-controller="ctrl1">Second Random Number : {{randomNum2}}</h4>
+
+        <!-- A page can contain multiple controllers -->
+        <h4 ng-controller="badCtrl">I'm feeling {{bad}}</h4>
+
+        <h4 ng-controller="goodCtrl">I'm feeling {{good}}</h4>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+        <script src="js/js2.js"></script>
+    </body>
+</html>
